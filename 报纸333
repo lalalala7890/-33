@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding:0;
+	}
+body{
+	width: 980px;
+	height: 1386px;
+	background-color: #fff;
+}
+
+.container{
+	width: 892px;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
+}
+/* header */
+
+header{
+	position: relative;
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+}
+
+header p{
+	
+	font-size: 12px;
+	font-family: "黑体";
+    line-height: 1.5;
+	margin: 0;
+}
+
+header span.header-left{
+	display: inline-block;
+	width: 110px;
+	height: 61px;
+	color: #fff;
+	background-color: #d55d5c;
+}
+
+header span.header-left i{
+	text-indent: 5px;
+	font-style: normal;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+header span.header-right{
+	color: #d45d5c;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* section */
+
+section .theme{
+	height: 301px;
+	margin: 35px 0;
+}
+
+section .theme .img{
+	display: inline-block;
+	width: 641px;
+	height: 301px;
+	background: url(01.jpg) no-repeat 0 0;
+}
+
+.img .img-left,.img .img-right{
+	width: 191px;
+	height: 301px;
+	position: absolute;
+}
+.img .img-left{
+	background-color: rgba(0,255,0,0.15);
+	float: left;
+}
+ .img .img-right{
+	float: right;
+	background-color: rgba(255,0,0,0.15);
+   }
+section p{
+	margin: 5px 0;
+}
+
+section .theme .about{
+	float: right;
+	display:inline-block;
+	width: 203px;
+	height: 301px;
+	padding-top: 5px;
+	border-top: 2px solid #cc8091;
+}
+
+section .theme .about .about-text{
+	font-size: 17px;
+	color: #333;
+	font-weight: normal;
+	line-height: 1;
+	font-family: "微软雅黑";
+	border-bottom: 2px solid #333;
+}
+
+section .theme .about .p1{
+	width: 68px;
+}
+
+section .theme .about .p2{
+	width: 126px;
+}
+
+section .theme .about .about-text em{
+	color: #000;
+	font-size: 25px;
+	font-style: normal;
+}
+
+section .theme .about .italic{
+	font-size: 12px;
+	color: #676767;
+	font-family: "楷体",sans-serif;
+	line-height: 10px;
+	margin-bottom: 40px;
+}
+
+section .theme .about .large{
+	font-size: 116px;
+	line-height: 0.95;
+	color: #75b86b;
+	font-family: "微软雅黑",sans-serif;
+	font-style: italic;
+	margin-left: -20px;
+}
+
+section .theme .about .last{
+	font-family: "微软雅黑",sans-serif;
+	color: #cc8091;
+	font-size: 55px;
+	line-height: 1;
+}
+
+section .theme .about .last span{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+section .theme .about .last i{
+	font-style: normal;
+	font-size: 13px;
+	font-weight: 100;
+}
+
+section nav dl div.items{
+	display: inline-block;
+	width: 200px;
+	margin-right: 20px;
+	vertical-align: top;
+}
+
+section nav dl div.items:last-child{
+	width: 160px;
+}
+
+section nav dl .items dt.what,
+section nav dl .items dt.when,
+section nav dl .items dt.how{
+	display: block;
+	font-size: 16px;
+	font-family: "微软雅黑",sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 8px;
+}
+
+section nav dl .items dt.what{
+	color: #418c59;
+}
+
+section nav dl .items dt.when{
+	color: #d2994f;
+}
+
+section nav dl .items dt.how{
+	color: #cc7680;
+}
+
+section nav dl dd{
+	margin: 0;
+}
+
+section nav dl .items dt.what + dd{
+	font-size: 12px;
+	color: #767777;
+	font-family: "宋体",sans-serif;
+	line-height: 16px;
+}
+
+section nav dl .items dt.when + dd,
+section nav dl .items dt.how + dd{
+	font-size: 12px;
+	color: #231815;
+	font-family: "微软雅黑",sans-serif;
+	line-height: 16px;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+}
+
+section nav dl .items dt.how + dd,
+section nav dl .items div.dd-bottom{
+	line-height: 20px;
+}
+
+section nav dl .items div.dd-bottom{
+	margin-top: 20px;
+	font-size: 12px;
+	font-family: "微软雅黑",sans-serif;
+}
+
+section nav dl .items div.dd-bottom span.percent{
+	color: #cd4a48;
+	font-style: italic;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+}
+
+section.article{
+	margin: 60px 0 40px 0;
+}
+
+section.article article{
+	display: inline-block;
+	width: 415px;
+}
+
+section.article article h1{
+	font-size: 42px;
+	color: #11456b;
+	font-family: "黑体",sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+section.article article h1 i{
+	font-style: italic;
+	font-size: 72px;
+	color: #f5e327;
+}
+
+section.article article h1 span{
+	margin-left: 25px;
+}
+
+section.article article h2{
+	font-size: 33px;
+	color:  #11456b;
+	font-family: "黑体",sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+section.article article div.paragraph{
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 2px solid #11456b;
+}
+
+section.article article div.paragraph p{
+	margin: 0;
+	font-size: 12px;
+	color: #767777;
+	font-family: "宋体",sans-serif;
+	line-height: 16px;
+}
+
+section.article article div.paragraph span{
+	font-size: 75px;
+	color: #f5e327;
+	font-family: "微软雅黑",sans-serif;
+	font-style: normal;
+	display: inline-block;
+	float: left;
+	margin: -10px 10px 0 0;
+}
+
+section.article article div.paragraph p.text-indent{
+	text-indent: 24px;
+}
+
+section.article article div.paragraph img{
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	float: right;
+	margin: 18px 10px 18px 10px;
+}
+
+section.article div.article-right{
+	display: inline-block;
+	width: 458px;
+	height: 655px;
+	vertical-align: top;
+}
+
+section.article div.article-right aside{
+	position: absolute;
+}
+
+section.article div.article-right aside img{
+	display: inline-block;
+	width: 458px;
+	height: 275px;
+}
+
+section.article div.article-right aside div.img-bottom{
+	width: 458px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	font-family: "微软雅黑",sans-serif;
+}
+
+section.article div.article-right aside div.img-bottom h2{
+	display: inline-block;
+	margin: 5px 0 5px 40px;
+	padding-left: 15px;
+	font-size: 26px;
+	color: #fff;
+	line-height: 44px;
+	height: 44px;
+	font-weight: normal;
+	
+	border-left: 3px solid #75b86b;
+}
+
+section.article div.article-right aside div.img-bottom p{
+	display: inline-block;
+	font-size: 14px;
+	color: #72b16a;
+	font-style: italic;
+	word-spacing: 140%;
+	margin-left: 5px;
+}
+
+section.article div.article-right nav{
+	width: 459px;
+	height: 330px;
+	background-color: #eeeed6;
+	margin-top: 315px;
+}
+
+section.article div.article-right nav ul{
+	list-style: none;
+	padding-top: 1px;
+	margin-left: -10px;
+}
+
+section.article div.article-right nav ul li{
+	margin: 25px 5px 25px 0;
+	font-size: 16px;
+	color: #5a5b5b;
+	font-family: "宋体",sans-serif;
+	line-height: 20px;
+}
+
+section.article div.article-right nav ul li span{
+	font-size: 12px;
+	height: 14px;
+	font-style: italic;
+}
+
+section.article div.article-right nav ul em{
+	display: block;
+	border: 5px solid;
+	float: left; 
+	border-color:  #eeeed6 #eeeed6 #10446b #eeeed6;
+	margin-right: 4px;
+	margin-top: 4px;
+}
+
+section.article div.article-right nav div.footer{
+	font-family: "黑体",sans-serif;
+}
+
+section.article div.article-right nav div.footer div.footer-left{
+	display: inline-block;
+	float: left;
+	width: 260px;
+	height: 160px;
+	color: #fff;
+	background-color: #d55d5c;
+}
+
+section.article div.article-right nav div.footer div.footer-left h1{
+	display: inline-block;
+	margin: 35px 10px;
+	padding:0 5px;
+	line-height: 90px;
+	font-size: 110px;
+	font-family: "微软雅黑",sans-serif;
+	font-weight: normal;
+	border-right: 2px solid #fff;
+}
+
+section.article div.article-right nav div.footer div.footer-left p{
+	display: inline-block;
+	margin-left: -10px;
+	width: 160px;
+	margin-top: -20px;
+}
+
+section.article div.article-right nav div.footer div.footer-left p strong{
+	display: block;
+	font-size: 21px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 24px;
+}
+
+section.article div.article-right nav div.footer div.footer-left p em{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	font-style: normal;
+}
+
+section.article div.article-right nav div.footer p.footer-right{
+	display: inline-block;
+	float: right;
+	width: 180px;
+	height: 130px;
+	font-size: 14px;
+	color: #5a5b5b;
+	font-style: italic;
+	margin-top: 30px;
+}
+
+section.article div.article-right nav div.footer p.footer-right span{
+	display: inline-block;
+	font-size: 72px;
+	color: #d45d5c;
+	font-style: normal;
+	height: 20px;
+}
+
+section.article div.article-right nav div.footer p.footer-right .left{
+	float: left;
+	
+	margin-left: -40px;
+	margin-top: -15px;
+	margin-right: 10px;
+}
+
+section.article div.article-right nav div.footer p.footer-right .right{
+	float: right;
+	margin-right: -20px;
+	margin-top: -5px;
+}
+
+footer{
+	width: 885px;
+	height: 60px;
+	border-top: 1px solid #938e8c;
+}
+
+footer p{
+	font-size: 12px;
+	color: #d45d5c;
+	font-family: "黑体",sans-serif;
+	margin: 0;
+	line-height: 1;
+	text-align: right;
+}</style>
+<div class="container">
+			<header>
+				<p><span class="header-left text"><i>ife.baidu.com</i></span><span class="header-right">2016.03</span></p>
+			</header>
+
+			<section>
+				<div class="theme clearix">
+					<div class="img clearfix">
+						<div class="img-left"></div>
+						<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488708726046&di=f5cd882f4ac1ba3879e5bf11e3f87ecf&imgtype=0&src=http%3A%2F%2Fimg.cf8.com.cn%2Fuploadfile%2F2014%2F1128%2F20141128051144182.png" height="301px" weight="641px">
+						<div class="img-right"></div>
+					</div>
+					<div class="about">
+						<p class="p1 about-text"><em>A</em>BOUT</p>
+						<p class="p2 about-text"><em>T</em>ECHNOLOGE</p>
+						<p class="italic">About technologe about technologe about technologe</p>
+						<p class="large">700</p>
+						<p class="last">3.2<span>CSS<br><i>cssssscssscsss</i></span></p>
+					</div>
+				</div>
+				
+				<nav>
+					<dl>
+						<div class="items">
+							<dt class="what">What</dt>
+								<dd>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</dd>
+						</div>
+						
+						<div class="items">		
+							<dt class="when">When</dt>
+								<dd>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</dd>
+						</div>
+						
+						<div class="items">		
+							<dt class="how">How</dt>
+								<dd>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</dd>
+
+								<div class="dd-bottom">
+									<dd>What--------<span class="percent">40%</span></dd>
+									<dd>What--------<span class="percent">30%</span></dd>
+									<dd>What--------<span class="percent">30%</span></dd>
+								</div>		
+						</div>		
+					</dl>
+				</nav>	
+			</section>
+
+			<section class="article"> 
+				<article>
+					<h1><i>THE</i><span>TECHNOLOGE OF FRONT</span></h1>
+					<h2>This is beacuse of you</h2>
+					<div class="paragraph clearfix">
+						<span>LOVE</span>
+						<p>this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488709896654&di=18e5c28edf38bd514d1257e9674406f6&imgtype=0&src=http%3A%2F%2Fy2.ifengimg.com%2Fa%2F2015_13%2F7c16ac416d3c0b7.jpg">this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you </P>
+						<p class="text-indent">this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you </p>
+						<p class="text-indent">this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you this is beacuse of you </p>
+					</div>
+				</article>
+
+				<div class="article-right">
+					<aside>
+							<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488708438644&di=d9f085cb568dfd230d0dab10e9f14a4e&imgtype=0&src=http%3A%2F%2Fcdn.duitang.com%2Fuploads%2Fitem%2F201603%2F24%2F20160324143430_PudRF.jpeg" alt="图片">
+							<div class="img-bottom">
+								<h2>lalalala</h2>
+								<p>lalalalallaa</p>
+							</div>
+					</aside>
+
+					<nav>
+						<ul>
+							<li><em></em>this is beacuse of you this is beacuse of you ...........<span>la</span></li>
+							<li><em></em>this is beacuse of you this is beacuse of you ...........<span>la</span></li>
+							<li><em></em>this is beacuse of you this is beacuse of you ...........<span>la</span></li>
+						</ul>
+
+						<div class="footer">
+							<div class="footer-left">
+								<h1>0</h1>
+								<p><strong>ONE TWO <br>THREE FORE FIVE</strong><em>hello world hello world hello world</em></p>
+							</div>
+							<p class="footer-right"> <span class="left">“</span>hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world<span class="right">”</span></p>
+						</div>
+					</nav>
+				</div>
+			</section>
+
+			<footer>
+				<p>ife.baidu.com</p>
+			</footer>
+		</div>
+	</body>
+</html>
+</body>
+</html>
